@@ -28,3 +28,9 @@ C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\EntityFramework.dll
 C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\EntityFramework.SqlServer.dll
 C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\EntityFramework.xml
 C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\EntityFramework.SqlServer.xml
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\WebMatrix.Data.dll
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\WebMatrix.WebData.dll
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\WebMatrix.Data.xml
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\bin\WebMatrix.WebData.xml
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\obj\Debug\App.Migrations.firstpush.resources
+C:\Users\t\Documents\GitHub\whatDyaThinkMVC\App\App\obj\Debug\App.csproj.GenerateResource.Cache

@@ -10,11 +10,11 @@ namespace App.DAL
     /// <summary>
     /// Context class tells us whats in the data model
     /// </summary>
-    public class SurveyContext : DbContext
+    public class SurveyAppContext : DbContext
     {
         /// connection string
-        public SurveyContext()
-            : base("myConnectionString") 
+        public SurveyAppContext()
+            : base("SurveyAppContext") 
         { }
 
         /// tables from models
