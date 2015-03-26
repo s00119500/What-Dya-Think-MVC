@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WhatDyaThink.Models.Survey>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.surveyName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.surveyName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.surveyID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.surveyID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.surveyID })
+        </td>
+    </tr>
+}
+
+</table>

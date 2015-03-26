@@ -1,0 +1,14 @@
+﻿@model WhatDyaThink.Models.Responces
+
+<div>
+    <dl>
+        <dd>
+            <input type="@Model.responceType" name="" value="" />
+            <label class="h5">@Model.responceText</label>
+        @Html.ActionLink("Details", "Details", "Responces", new { id = Model.responceID }, new { @class = "btn" }) |
+        @Html.ActionLink("Edit", "Edit", "Responces", new { id = Model.responceID }, new { @class = "btn" }) |
+        @Html.ActionLink("Delete", "Delete", "Responces", new { id = Model.responceID }, new { @class = "btn" })
+        </dd>
+    </dl>
+</div>
+    

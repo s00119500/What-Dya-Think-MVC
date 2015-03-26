@@ -1,0 +1,58 @@
+﻿@model WhatDyaThink.Models.Responces
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Responces</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Question.questionText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Question.questionText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responceType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responceType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responceText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responceText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responceCSS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responceCSS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responceValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responceValue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.responceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

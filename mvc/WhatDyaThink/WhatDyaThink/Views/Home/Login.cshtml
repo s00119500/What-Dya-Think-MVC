@@ -1,0 +1,42 @@
+﻿@model WhatDyaThink.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h1>Login</h1>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    /// Prevent CSRF attacks
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <table>
+        <tr>
+            <td>@Html.LabelFor(u => u.UserName)</td>
+            <td>@Html.TextBoxFor(u => u.UserName)</td>
+            <td>@Html.ValidationMessageFor(u => u.UserName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Password)</td>
+            <td>@Html.TextBoxFor(p => p.Password)</td>
+            <td>@Html.ValidationMessageFor(p => p.Password)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <<td><input type="submit" name="" value="Login" /></td>
+            <td></td>
+        </tr>
+    </table>
+}
+@* Below this line is for creating javascript  *@
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }

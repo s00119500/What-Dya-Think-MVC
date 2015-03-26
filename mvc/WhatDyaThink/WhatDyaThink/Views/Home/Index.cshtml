@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WhatDyaThink.Models.Survey>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@Html.Partial("list")
+@*<table class="table table-bordered table-hover">
+    @foreach (var surveys in Model)
+    {
+        ///get all surveys one at a time
+
+        @Html.Partial("_SurveyList", surveys)
+
+        ///get questions belonging to surveys
+
+        foreach (var questions in surveys.questionCollection)
+            {
+                @Html.Partial("_QuestionList", questions)
+
+            /// display responces belonging to questions
+                foreach (var responces in questions.questionResponces)
+                {
+                    @Html.Partial("_ResponceList",responces)
+                }
+
+            }
+    }
+</table>*@
+
+
+@*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.surveyName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.surveyName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.surveyID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.surveyID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.surveyID })
+                </td>
+            </tr>
+        }
+
+    </table>*@
+

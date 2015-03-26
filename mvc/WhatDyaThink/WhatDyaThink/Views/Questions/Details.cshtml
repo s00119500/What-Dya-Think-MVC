@@ -1,0 +1,37 @@
+﻿@model WhatDyaThink.Models.Question
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Question</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.questionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.questionID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.questionType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.questionType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.questionText)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.questionText)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", "Question", new { id = Model.questionID }, new { @class = "btn" }) |
+    @Html.ActionLink("Home", "Index", "Home", null, new {@class="btn" })
+</p>

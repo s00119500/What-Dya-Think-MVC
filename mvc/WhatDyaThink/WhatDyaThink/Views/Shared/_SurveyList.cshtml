@@ -1,0 +1,16 @@
+﻿@model WhatDyaThink.Models.Survey
+
+<tr>
+    <td>Survey ID :</td>
+    <td>@Model.surveyID</td>
+    <td>
+        @Html.ActionLink("Details", "Details", new { id = Model.surveyID }, new { @class = "btn" }) |
+        @Html.ActionLink("Edit", "Edit", new { id = Model.surveyID }, new { @class = "btn" }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.surveyID }, new { @class = "btn" })
+    </td>
+
+</tr>
+<tr>
+    <td>Name :</td>
+    <td>@Model.surveyName</td>
+</tr>

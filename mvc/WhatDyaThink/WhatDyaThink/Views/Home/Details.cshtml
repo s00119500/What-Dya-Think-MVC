@@ -1,0 +1,30 @@
+﻿@model WhatDyaThink.Models.Survey
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2></h2>
+
+<div>
+    <h1>@Html.DisplayFor(model => model.surveyName) Details</h1>
+    <hr />
+    @* questions and responces to survey *@
+
+    @foreach (var question in Model.questionCollection)
+    {
+        /// diplay question
+        @Html.Partial("_QuestionList", question)
+        foreach (var responce in question.questionResponces)
+        {
+            @Html.Partial("_ResponceList", responce)
+        }
+        @Html.ActionLink("Add another Responce", "Create", "Responces", new { id = question.questionID}, new { @class = "btn btn-default" })
+
+        <br />
+        <br />
+        <br />
+    }
+    @*@Html.ActionLink("Delete", "Delete", "Question", new { id = Model.questionID }, new { @class = "btn" })*@
+    @Html.ActionLink("Add a Question", "Create", "Questions", new { id = Model.surveyID }, new { @class = "btn btn-default" })
+</div>
